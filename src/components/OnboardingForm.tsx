@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import type { UserRequirements, SkillLevel, TimeAvailability, Interest } from '@/types';
+import ThemeSelector from './ThemeSelector';
 
 interface OnboardingFormProps {
   onSubmit: (requirements: UserRequirements) => void;
@@ -199,6 +200,11 @@ export default function OnboardingForm({ onSubmit, isLoading = false }: Onboardi
             </button>
           ))}
         </div>
+      </div>
+
+      {/* Theme Selector */}
+      <div className="pt-6 border-t border-white/20">
+        <ThemeSelector />
       </div>
 
       {/* Submit Button */}
