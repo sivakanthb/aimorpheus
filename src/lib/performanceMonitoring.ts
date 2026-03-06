@@ -25,9 +25,9 @@ export const useWebVitals = () => {
 
     const collectVitals = async () => {
       try {
-        // Dynamically import web-vitals
-        const { getCLS, getFID, getFCP, getLCP, getTTFB } = await import('web-vitals');
-
+        // Dynamically import web-vitals - handle both module formats
+        const webVitals = await import('web-vitals');
+        
         const handleMetric = (metric: any) => {
           const vital: WebVitals = {
             name: metric.name,
@@ -48,11 +48,12 @@ export const useWebVitals = () => {
           }
         };
 
-        getCLS(handleMetric);
-        getFID(handleMetric);
-        getFCP(handleMetric);
-        getLCP(handleMetric);
-        getTTFB(handleMetric);
+        // Use onCLS, onFID, etc. callbacks if available
+        if (webVitals.onCLS) webVitals.onCLS(handleMetric);
+        if (webVitals.onFID) webVitals.onFID(handleMetric);
+        if (webVitals.onFCP) webVitals.onFCP(handleMetric);
+        if (webVitals.onLCP) webVitals.onLCP(handleMetric);
+        if (webVitals.onTTFB) webVitals.onTTFB(handleMetric);
       } catch (error) {
         console.warn('Failed to collect Web Vitals:', error);
       }
