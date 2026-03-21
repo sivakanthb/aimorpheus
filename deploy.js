@@ -1,6 +1,6 @@
 const { execSync } = require('child_process');
 
-const token = 'vcp_3qJ3DsFNRl3SEMMBQpU4DMhFEeJsnUgsHiJv7kHkeqM89QRe2z3z9ik9';
+const token = process.env.VERCEL_TOKEN;
 const cwd = process.cwd();
 
 try {
