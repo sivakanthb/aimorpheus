@@ -42,7 +42,7 @@ This document tracks the setup and development guidelines for SkillForge, a revo
 
 ## Project Structure
 ```
-my-learning-app/
+aimorpheus/
 ├── .github/                 # GitHub configuration
 ├── .vscode/                 # VS Code settings
 │   └── tasks.json          # Development tasks

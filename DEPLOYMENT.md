@@ -11,7 +11,7 @@
 
 #### 1. **Initialize Git Repository**
 ```bash
-cd my-learning-app
+cd aimorpheus
 git init
 git add .
 git commit -m "Initial commit: AIMorpheus AI Learning Portal"

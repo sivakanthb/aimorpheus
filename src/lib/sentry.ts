@@ -12,12 +12,12 @@ export const initSentry = () => {
         dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
         environment: process.env.NODE_ENV,
         tracesSampleRate: process.env.NODE_ENV === 'production' ? 0.1 : 1.0,
-        integrations: [
-          new Sentry.Replay({
+        integrations: Sentry.replayIntegration ? [
+          Sentry.replayIntegration({
             maskAllText: false,
             blockAllMedia: false,
           }),
-        ],
+        ] : [],
         replaysSessionSampleRate: 0.1,
         replaysOnErrorSampleRate: 1.0,
         enabled:

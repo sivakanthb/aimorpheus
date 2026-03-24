@@ -31,6 +31,9 @@ export default function RootLayout({
       >
         <ErrorBoundary>
           <ClientLayout>{children}</ClientLayout>
+          <footer style={{textAlign:'center',padding:'20px 16px',borderTop:'1px solid #e5e7eb',fontSize:'0.78rem',color:'#9ca3af'}}>
+            &copy; 2026 AIMorpheus &middot; Built by <a href="https://sivakanth.vercel.app" target="_blank" rel="noopener noreferrer" style={{color:'#4f46e5',textDecoration:'none'}}>Sivakanth Badigenchala</a>
+          </footer>
         </ErrorBoundary>
       </body>
     </html>

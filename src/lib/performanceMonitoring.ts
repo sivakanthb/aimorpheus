@@ -48,9 +48,9 @@ export const useWebVitals = () => {
           }
         };
 
-        // Use onCLS, onFID, etc. callbacks if available
+        // Use onCLS, onINP, etc. callbacks if available
         if (webVitals.onCLS) webVitals.onCLS(handleMetric);
-        if (webVitals.onFID) webVitals.onFID(handleMetric);
+        if (webVitals.onINP) webVitals.onINP(handleMetric);
         if (webVitals.onFCP) webVitals.onFCP(handleMetric);
         if (webVitals.onLCP) webVitals.onLCP(handleMetric);
         if (webVitals.onTTFB) webVitals.onTTFB(handleMetric);
