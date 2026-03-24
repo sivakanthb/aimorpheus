@@ -140,9 +140,9 @@ export default function AILearningPortal() {
           <div className="mt-10 mb-6 text-center">
             <p className="text-sm font-semibold text-gray-300 mb-4">Explore Sivakanth's AI Lab</p>
             <div className="flex flex-wrap justify-center gap-3">
-              <a href="https://ai-sage-nine.vercel.app/" target="_blank" rel="noopener noreferrer"
+              <a href="https://myaivantage.vercel.app/" target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm text-gray-300 hover:border-indigo-400/50 hover:text-indigo-300 transition-all">
-                🤝 AI Buddy <span className="text-xs text-gray-500">— AI Readiness Check</span>
+                🔭 AI Vantage <span className="text-xs text-gray-500">— AI Readiness Check</span>
               </a>
               <a href="https://myaicompass.vercel.app/" target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm text-gray-300 hover:border-blue-400/50 hover:text-blue-300 transition-all">
